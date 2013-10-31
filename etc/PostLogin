@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# Note: this is a sample and will not be run as is.
+
+# lock the computer because autologin is enabled...
+i3lock &

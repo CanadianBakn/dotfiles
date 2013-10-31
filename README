@@ -1,0 +1,10 @@
+Just a place to store my dotfiles, people can browse them if they like (though
+I recommend checking out something more polished, see http://dotfiles.github.io)
+
+I have configuration files for the following:
+i3
+bash
+vim
+LXDM
+systemctl
+feh (setting desktop background)
