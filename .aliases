@@ -15,12 +15,14 @@ alias ln='ln -i'
 
 # ----- shortcuts -----
 alias c='clear'
-alias h='history'
+alias h='history | tail -500'
 alias ..='cd ..'
 alias ...='cd ../..'
 
 alias xclips='xclip -selection clipboard'
 alias pasteit="curl -F 'sprunge=<-' http://sprunge.us"
+alias pasteitc="curl -F 'sprunge=<-' http://sprunge.us && xclip -selection clipboard"
+
  
 # trackpad broken on laptop, hack to open wicd-client interface 
 alias wicdr='killall wicd-client && wicd-client &'
