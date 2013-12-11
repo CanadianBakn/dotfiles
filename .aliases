@@ -59,6 +59,7 @@ alias sshhomep='ssh -p 12510 -D 6969 root@lawlcatz.bounceme.net'
 # ----- dropbox -----
 export dpub=/home/jon/Dropbox/Public
 alias cddbx='cd $DBX'
+alias dropboxr='killall dropbox && dropboxd &'
  
 # ----- other -----
 if myhave colordiff; then alias diff=colordiff; fi
