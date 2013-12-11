@@ -23,6 +23,9 @@ alias xclips='xclip -selection clipboard'
 alias pasteit="curl -F 'sprunge=<-' http://sprunge.us"
 alias pasteitc="curl -F 'sprunge=<-' http://sprunge.us | xclip -selection clipboard"
 
+# for learning
+alias readlineh="man readline | egrep '\(.-'"
+
  
 # trackpad broken on laptop, hack to open wicd-client interface 
 alias wicdr='killall wicd-client && wicd-client &'
