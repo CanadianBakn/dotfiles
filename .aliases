@@ -49,7 +49,7 @@ alias gitbr='git symbolic-ref HEAD'
 # -----  arch ----- 
 alias pacnew='find /etc -regextype posix-extended -regex ".+\.pac(new|save|orig)" 2> /dev/null'
 alias compup='sudo pacman -Syu'
-alias cowerup='cd /home/jon/cowerbuild && cower -uddv'
+alias cowerup='cd /home/jon/cowerbuild && cower -uddv | grep -v "Checking"'
 alias gnome-open='xdg-open'
 
 # -----  ssh ----- 
