@@ -28,7 +28,7 @@ alias readlineh="man readline | egrep '\(.-'"
 
  
 # trackpad broken on laptop, hack to open wicd-client interface 
-alias wicdr='killall wicd-client && wicd-client &'
+alias wicdr='killall wicd-client; wicd-client &'
  
 # ----- cmd correction -----
 alias kilall='killall' 
