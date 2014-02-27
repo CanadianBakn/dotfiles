@@ -76,6 +76,8 @@ alias cdirn='cd /home/jon/Dropbox/School/Computer\ Science/Notes/'
 alias cdirw='cd /home/jon/Dropbox/workspace'
 alias cdirt='cd /home/jon/Dropbox/School/Computer\ Science/work/trlabs'
 
+alias cdirph='cd /home/jon/Dropbox/School/Philosophy'
+
 alias cdir1010='cd /home/jon/Dropbox/School/Computer\ Science/Programs/1010'
 alias cdir1020='cd /home/jon/Dropbox/School/Computer\ Science/Programs/1020'
 alias cdir2140='cd /home/jon/Dropbox/School/Computer\ Science/Programs/2140'
