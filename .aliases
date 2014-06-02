@@ -62,12 +62,15 @@ alias sshhomep='ssh -p 12510 -D 6969 root@lawlcatz.bounceme.net'
 # ----- dropbox -----
 export dpub=/home/jon/Dropbox/Public
 alias cddbx='cd $DBX'
-alias dropboxr='killall dropbox && dropboxd &'
+alias dropboxr='killall dropbox; dropboxd &'
  
 # ----- other -----
 if myhave colordiff; then alias diff=colordiff; fi
 alias swriter='libreoffice --writer'
 alias alsamixerequal='alsamixer -D equal'
+alias scrot5='scrot -d 5'
+
+alias umount='udiskie-umount'
 
 # ----- school (until EOF) -----
 alias cdir='cd /home/jon/Dropbox/School/Computer\ Science/Programs'
