@@ -1,9 +1,6 @@
 myhave() { command -v "$1" >& /dev/null; }
 
 # ----- env vars -----
-export AVP='ummelven@aviary.cs.umanitoba.ca'
-export HOMEP='root@lawlcatz.bounceme.net'
-export HOMEPL='root@192.168.1.108'
 export DBX='/home/jon/Dropbox/'
 export GIT_EDITOR='vim'
 
@@ -26,7 +23,6 @@ alias pasteitc="curl -F 'sprunge=<-' http://sprunge.us | xclip -selection clipbo
 # for learning
 alias readlineh="man readline | egrep '\(.-'"
 
- 
 # trackpad broken on laptop, hack to open wicd-client interface 
 alias wicdr='killall wicd-client; wicd-client &'
  
@@ -52,13 +48,6 @@ alias compup='sudo pacman -Syu'
 alias cowerup='cd /home/jon/cowerbuild && cower -uddv | grep -v "Checking"'
 alias gnome-open='xdg-open'
 
-# -----  ssh ----- 
-alias sshav='ssh -X ummelven@aviary.cs.umanitoba.ca'
-alias sshcsg='ssh csadmin@130.179.31.230'
-alias sshavp='ssh -X -D 6969 ummelven@aviary.cs.umanitoba.ca'
-alias sshhome='ssh -X -p 12510 root@lawlcatz.bounceme.net'
-alias sshhomep='ssh -p 12510 -D 6969 root@lawlcatz.bounceme.net'
- 
 # ----- dropbox -----
 export dpub=/home/jon/Dropbox/Public
 alias cddbx='cd $DBX'
@@ -71,47 +60,3 @@ alias alsamixerequal='alsamixer -D equal'
 alias scrot5='scrot -d 5'
 
 alias umount='udiskie-umount'
-
-# ----- school (until EOF) -----
-alias cdir='cd /home/jon/Dropbox/School/Computer\ Science/Programs'
-alias cdirp='cd /home/jon/Dropbox/School/Computer\ Science/Programs'
-alias cdirn='cd /home/jon/Dropbox/School/Computer\ Science/Notes/'
-alias cdirw='cd /home/jon/Dropbox/workspace'
-alias cdirt='cd /home/jon/Dropbox/School/Computer\ Science/work/trlabs'
-
-alias cdirph='cd /home/jon/Dropbox/School/Philosophy'
-
-alias cdir1010='cd /home/jon/Dropbox/School/Computer\ Science/Programs/1010'
-alias cdir1020='cd /home/jon/Dropbox/School/Computer\ Science/Programs/1020'
-alias cdir2140='cd /home/jon/Dropbox/School/Computer\ Science/Programs/2140'
-alias cdir2150='cd /home/jon/Dropbox/School/Computer\ Science/Programs/2150'
-alias cdir2160='cd /home/jon/Dropbox/School/Computer\ Science/Programs/2160'
-alias cdir2280='cd /home/jon/Dropbox/School/Computer\ Science/Programs/2280'
-alias cdir3370='cd /home/jon/Dropbox/School/Computer\ Science/Programs/3370'
-alias cdir3430='cd /home/jon/Dropbox/School/Computer\ Science/Programs/3430'
-alias cdir3720='cd /home/jon/Dropbox/School/Computer\ Science/Programs/3720'
-alias cdir3350='cd /home/jon/Dropbox/School/Computer\ Science/Programs/3350'
-alias cdir3620='cd /home/jon/Dropbox/School/Computer\ Science/Programs/3620'
-alias cdir4580='cd /home/jon/Dropbox/School/Computer\ Science/Programs/4580'
-alias cdir4140='cd /home/jon/Dropbox/School/Computer\ Science/Programs/4140'
-alias cdir3010='cd /home/jon/Dropbox/School/Computer\ Science/Programs/3010'
-alias cdir3020='cd /home/jon/Dropbox/School/Computer\ Science/Programs/3020'
-alias cdir3190='cd /home/jon/Dropbox/School/Computer\ Science/Programs/3190'
-alias cdir4720='cd /home/jon/Dropbox/School/Computer\ Science/Programs/4720'
-
-alias cdir1010n='cd /home/jon/Dropbox/School/Computer\ Science/Notes/COMP\ 1010'
-alias cdir1020n='cd /home/jon/Dropbox/School/Computer\ Science/Notes/COMP\ 1020'
-alias cdir2140n='cd /home/jon/Dropbox/School/Computer\ Science/Notes/COMP\ 2140'
-alias cdir2150n='cd /home/jon/Dropbox/School/Computer\ Science/Notes/COMP\ 2150'
-alias cdir2160n='cd /home/jon/Dropbox/School/Computer\ Science/Notes/COMP\ 2160'
-alias cdir2280n='cd /home/jon/Dropbox/School/Computer\ Science/Notes/COMP\ 2280'
-alias cdir3370n='cd /home/jon/Dropbox/School/Computer\ Science/Notes/3370'
-alias cdir3190n='cd /home/jon/Dropbox/School/Computer\ Science/Notes/3190'
-alias cdir3430n='cd /home/jon/Dropbox/School/Computer\ Science/Notes/COMP\ 3430'
-alias cdir3720n='cd /home/jon/Dropbox/School/Computer\ Science/Notes/COMP\ 3720'
-alias cdir3350n='cd /home/jon/Dropbox/School/Computer\ Science/Notes/COMP\ 3350'
-alias cdir3620n='cd /home/jon/Dropbox/School/Computer\ Science/Notes/COMP\ 3620'
-alias cdir4580n='cd /home/jon/Dropbox/School/Computer\ Science/Notes/COMP\ 4580'
-alias cdir3010n='cd /home/jon/Dropbox/School/Computer\ Science/Notes/COMP\ 3010'
-alias cdir4720n='cd /home/jon/Dropbox/School/Computer\ Science/Notes/4720'
-alias cdir3020n='cd /home/jon/Dropbox/School/Computer\ Science/Notes/3020'
