@@ -1,1 +1,2 @@
-feh  --bg-scale '/home/jon/wallpaper/abstract-space.jpg' 
+#!/bin/sh
+feh  --bg-scale '/home/jon/wallpaper/floyd.jpg' 

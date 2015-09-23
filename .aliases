@@ -18,8 +18,8 @@ alias ...='cd ../..'
 
 alias xclips='xclip -selection clipboard'
 alias pasteit="curl -F 'sprunge=<-' http://sprunge.us"
-alias pasteitc="curl -F 'sprunge=<-' http://sprunge.us | xclip -selection clipboard"
-
+#alias pasteitc="curl -F 'sprunge=<-' http://sprunge.us | xclip -selection clipboard"
+alias pasteitc="curl -F 'f:1=<-' ix.io | xclip -selection clipboard"
 # for learning
 alias readlineh="man readline | egrep '\(.-'"
 
