@@ -1,0 +1,55 @@
+# linux stuff
+alias cdrs='cd /c/dev/root-site'
+alias cdpn='cd /c/dev/payworks-next/payworks-next'
+alias cdpns='cd /c/dev/payworks-next'
+
+alias cdrst='cd /c/dev/tmp/root-site'
+alias cdt='cd /c/dev/tmp/'
+alias so='source'
+alias c='clear'
+alias ..='cd ..'
+alias ...='cd ../../'
+alias l='ls'
+alias ll='ls -lah'
+alias h='history'
+
+# git
+alias gits='git status'
+alias gitl='git log'
+alias gitla='git log --graph --oneline --all --decorate'
+alias gitd='git diff'
+alias gitdc='git diff --cached'
+alias gitb='git branch'
+alias gitbr='git branch'
+alias gitbrm='git branch -m'
+alias gitst='git stash save'
+alias gitstp='git stash pop'
+alias gitstl='git stash list'
+alias gitsts='git stash show'
+alias gitstd='git stash show -p' # diff
+alias gitch='git checkout'
+alias gitchp='git checkout -p'
+alias gitcl='git clone'
+alias gitcb='git checkout -b'
+alias gita='git add'
+alias gitau='git add -u'
+alias gitmv='git mv'
+alias gitcm='git commit'
+alias gitp='git push -u'
+alias gitpl='git pull'
+alias gitf='git fetch -p'
+alias gitfpl='git fetch -p && git pull'
+alias gitrm='git rm'
+alias gitbl='git blame -w'
+alias gitbrdelrem='git push origin --delete'
+
+# productivity
+alias todo='vim ~/Desktop/todo'
+alias todoc='cat ~/Desktop/todo'
+
+# mingw sucks
+alias vim='/c/Program\ Files\ \(x86\)/Vim/vim74/vim.exe'
+
+# sometimes we need to use cmd.exe
+alias pullresx='start /msys.bat /c/dev/root-site/PullResx.bat'
+alias runbat='start /msys.bat'
