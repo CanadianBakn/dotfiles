@@ -55,6 +55,9 @@ set statusline=%f%h%m%r\ [%{Jgetcwd()}]%<%=[LINE:\%l,COL:%c%V]\ [ASC:%b\,HEX:0x%
 
 " fix backspace
 set backspace=indent,eol,start
+ 
+" map ctrl+backspace to delete the prev word in insert mode
+imap <C-BS> <C-W>
 
 " code navigation
 set number
@@ -206,3 +209,5 @@ map PP :TlistToggle<CR>
 " set ffs=unix,dos
 "
 
+" enable spelling in git commits
+autocmd FileType gitcommit setlocal spell spelllang=en_ca
