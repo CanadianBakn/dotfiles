@@ -22,13 +22,12 @@ alias gitdc='git diff --cached'
 alias gitb='git branch'
 alias gitbr='git branch'
 alias gitbrm='git branch -m'
-alias gitst='git stash save'
+alias gitst='git stash'
 alias gitstp='git stash pop'
 alias gitstl='git stash list'
 alias gitsts='git stash show'
 alias gitstd='git stash show -p' # diff
 alias gitch='git checkout'
-alias gitchp='git checkout -p'
 alias gitcl='git clone'
 alias gitcb='git checkout -b'
 alias gita='git add'
@@ -42,6 +41,18 @@ alias gitfpl='git fetch -p && git pull'
 alias gitrm='git rm'
 alias gitbl='git blame -w'
 alias gitbrdelrem='git push origin --delete'
+
+function gitchpl()
+{
+    echo "git checkout $@ && git pull";
+    git checkout "$@" && git pull;
+}
+
+function gitfchpl()
+{
+    echo "git fetch -p && git checkout $@ && git pull";
+    git fetch -p && git checkout "$@" && git pull;
+}
 
 # productivity
 alias todo='vim ~/Desktop/todo'
