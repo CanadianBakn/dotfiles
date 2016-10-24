@@ -14,8 +14,10 @@ alias ll='ls -lah'
 alias h='history'
 
 # git
+source ~/git-completion.bash
 alias gits='git status'
 alias gitl='git log'
+alias gitgl='git glog'
 alias gitla='git log --graph --oneline --all --decorate'
 alias gitd='git diff'
 alias gitdc='git diff --cached'
@@ -28,6 +30,7 @@ alias gitstl='git stash list'
 alias gitsts='git stash show'
 alias gitstd='git stash show -p' # diff
 alias gitch='git checkout'
+__git_complete gitch _git_checkout
 alias gitcl='git clone'
 alias gitcb='git checkout -b'
 alias gita='git add'
@@ -35,6 +38,7 @@ alias gitau='git add -u'
 alias gitmv='git mv'
 alias gitcm='git commit'
 alias gitp='git push -u'
+alias gitfp='git push --force-with-lease'
 alias gitpl='git pull'
 alias gitf='git fetch -p'
 alias gitfpl='git fetch -p && git pull'
