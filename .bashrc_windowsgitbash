@@ -1,5 +1,7 @@
 # linux stuff
+export HISTCONTROL=ignoreboth:erasedups
 alias cdrs='cd /c/dev/root-site'
+alias cdcdn='cd /c/dev/cdn'
 alias cdpn='cd /c/dev/payworks-next/payworks-next'
 alias cdpns='cd /c/dev/payworks-next'
 
@@ -29,6 +31,7 @@ alias gitstp='git stash pop'
 alias gitstl='git stash list'
 alias gitsts='git stash show'
 alias gitstd='git stash show -p' # diff
+alias gitr='git reset'
 alias gitch='git checkout'
 __git_complete gitch _git_checkout
 alias gitcl='git clone'
@@ -48,6 +51,8 @@ alias gitbrdelrem='git push origin --delete'
 
 function gitchpl()
 {
+    #TODO: pull curr branch if no args specified
+    #test "$@" == "" && $@=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,');
     echo "git checkout $@ && git pull";
     git checkout "$@" && git pull;
 }
