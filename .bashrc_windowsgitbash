@@ -3,6 +3,7 @@ export HISTCONTROL=ignoreboth:erasedups
 alias cdrs='cd /c/dev/root-site'
 alias cdcdn='cd /c/dev/cdn'
 alias cdpn='cd /c/dev/payworks-next/payworks-next'
+alias cdpn2='cd /c/dev/payworks-next-v2'
 alias cdpns='cd /c/dev/payworks-next'
 
 alias cdrst='cd /c/dev/tmp/root-site'

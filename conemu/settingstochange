@@ -1,0 +1,6 @@
+Settings -> General. Use colour scheme xterm. Possible TODO to find something nicer.
+
+Settings -> Keys and Macro -> Mouse. Disable activate split/pane on mouse hover.
+
+Settings -> Keys and Macro -> Split: Put focus to nearest pane _direction_
+    - drop the apps key, just use alt + arrows

@@ -1,0 +1,14 @@
+# cur_console is the same as new_console in any startup task
+# remember to change your default task to this
+# cur_console:s*number* is a split on that tab number. TODO to make it a named tab perhaps
+# this is specialized for Payworks but is a nice example of a tab + split scheme.
+
+> -cur_console:p -cur_console:d:C:\dev\payworks-next-v2 set "PATH=%ConEmuDir%\..\Git\usr\bin;%PATH%" & "%ConEmuDir%\..\Git\git-cmd.exe" --no-cd --command=%ConEmuBaseDirShort%\conemu-msys2-64.exe /usr/bin/bash.exe -l -i
+
+-cur_console:s1T50H -cur_console:d:C:\dev\payworks-next-v2\src\Payworks.WebServices.Core cmd.exe /k "%ConEmuBaseDir%\CmdInit.cmd"
+
+-cur_console:s2T50V -cur_console:d:C:\dev\payworks-next-v2\src\Payworks.Web.Core cmd.exe /k "%ConEmuBaseDir%\CmdInit.cmd"
+
+-cur_console:d:C:\dev\root-site\resources cmd.exe /k "%ConEmuBaseDir%\CmdInit.cmd"
+
+-cur_console:s3T50H -cur_console:d:C:\dev\payworks-next-v2\src\Payworks.Web.Core cmd.exe /k "%ConEmuBaseDir%\CmdInit.cmd"
