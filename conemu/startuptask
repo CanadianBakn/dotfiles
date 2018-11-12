@@ -5,10 +5,12 @@
 
 > -cur_console:p -cur_console:d:C:\dev\payworks-next-v2 set "PATH=%ConEmuDir%\..\Git\usr\bin;%PATH%" & "%ConEmuDir%\..\Git\git-cmd.exe" --no-cd --command=%ConEmuBaseDirShort%\conemu-msys2-64.exe /usr/bin/bash.exe -l -i
 
--cur_console:s1T50H -cur_console:d:C:\dev\payworks-next-v2\src\Payworks.WebServices.Core cmd.exe /k "%ConEmuBaseDir%\CmdInit.cmd"
+-cur_console:s1T50H -cur_console:d:C:\dev\payworks-next-v2\src\Payworks.WebServices.Core cmd.exe /k "%ConEmuBaseDir%\CmdInit.cmd" & echo dotnet watch run
 
--cur_console:s2T50V -cur_console:d:C:\dev\payworks-next-v2\src\Payworks.Web.Core cmd.exe /k "%ConEmuBaseDir%\CmdInit.cmd"
+-cur_console:s2T50V -cur_console:d:C:\dev\payworks-next-v2\src\Payworks.Web.Core cmd.exe /k "%ConEmuBaseDir%\CmdInit.cmd" & echo dotnet watch run
 
--cur_console:d:C:\dev\root-site\resources cmd.exe /k "%ConEmuBaseDir%\CmdInit.cmd"
+-cur_console:d:C:\dev\root-site\resources cmd.exe /k "%ConEmuBaseDir%\CmdInit.cmd" & echo grunt dev
 
--cur_console:s3T50H -cur_console:d:C:\dev\payworks-next-v2\src\Payworks.Web.Core cmd.exe /k "%ConEmuBaseDir%\CmdInit.cmd"
+-cur_console:s4T50H -cur_console:d:C:\dev\payworks-next-v2\src\Payworks.Web.Core cmd.exe /k "%ConEmuBaseDir%\CmdInit.cmd" & echo grunt dev
+
+-cur_console:s4T50V -cur_console:d:C:\dev\payworks-next\payworks-next\Payworks.Web\Scripts cmd.exe /k "%ConEmuBaseDir%\CmdInit.cmd" & echo npm install followed by npm run dev
