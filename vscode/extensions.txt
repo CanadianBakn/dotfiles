@@ -1,0 +1,6 @@
+k--kato.docomment
+ms-vscode.csharp
+ms-vscode.sublime-keybindings
+shardulm94.trailing-spaces
+streetsidesoftware.code-spell-checker
+wayou.vscode-todo-highlight

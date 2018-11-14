@@ -1,0 +1,9 @@
+{
+    "editor.renderWhitespace": "all",
+    "workbench.editor.enablePreview": false,
+    "omnisharp.disableMSBuildDiagnosticWarning": true,
+    "cSpell.userWords": [
+        "Toastr",
+        "birst"
+    ]
+}

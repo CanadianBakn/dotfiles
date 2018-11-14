@@ -1,0 +1,8 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    { "key": "shift+alt+1",           "command": "workbench.action.joinAllGroups" },
+    { "key": "ctrl+alt+p",                    "command": "workbench.action.debug.start",
+        "when": "!inDebugMode" },
+    { "key": "alt+enter",                "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly" }
+]
