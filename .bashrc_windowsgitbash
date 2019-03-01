@@ -5,6 +5,7 @@ alias cdcdn='cd /c/dev/cdn'
 alias cdpn='cd /c/dev/payworks-next/payworks-next'
 alias cdpn2='cd /c/dev/payworks-next-v2'
 alias cdpns='cd /c/dev/payworks-next'
+alias cdods='cd /c/dev/odsdatacompare'
 
 alias cdrst='cd /c/dev/tmp/root-site'
 alias cdt='cd /c/dev/tmp/'
@@ -35,6 +36,8 @@ alias gitstd='git stash show -p' # diff
 alias gitr='git reset'
 alias gitch='git checkout'
 __git_complete gitch _git_checkout
+alias gitrb='git rebase -i'
+alias gitfrb='git fetch -p && git rebase -i'
 alias gitcl='git clone'
 alias gitcb='git checkout -b'
 alias gita='git add'
@@ -69,7 +72,7 @@ alias todo='vim ~/Desktop/todo'
 alias todoc='cat ~/Desktop/todo'
 
 # mingw sucks
-alias vim='/c/Program\ Files\ \(x86\)/Vim/vim74/vim.exe'
+#alias vim='/c/Program\ Files\ \(x86\)/Vim/vim81/vim.exe'
 
 # sometimes we need to use cmd.exe
 alias pullresx='start /msys.bat /c/dev/root-site/PullResx.bat'
