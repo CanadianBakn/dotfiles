@@ -4,5 +4,7 @@
     { "key": "ctrl+alt+p",                    "command": "workbench.action.debug.start",
         "when": "!inDebugMode" },
     { "key": "alt+enter",                "command": "editor.action.quickFix",
-        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly" }
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly" },
+    { "key": "ctrl+tab", "command" : "workbench.action.nextEditor"},
+    { "key": "ctrl+shift+tab", "command" : "workbench.action.previousEditor"},
 ]
