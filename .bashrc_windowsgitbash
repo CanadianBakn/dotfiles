@@ -1,26 +1,26 @@
 # linux stuff
 export HISTCONTROL=ignoreboth:erasedups
-alias cdrs='cd /c/dev/root-site'
-alias cdcdn='cd /c/dev/cdn'
-alias cdpn='cd /c/dev/payworks-next/payworks-next'
-alias cdpn2='cd /c/dev/payworks-next-v2'
-alias cdpns='cd /c/dev/payworks-next'
-alias cdods='cd /c/dev/odsdatacompare'
-
-alias cdrst='cd /c/dev/tmp/root-site'
-alias cdt='cd /c/dev/tmp/'
 alias so='source'
-alias c='clear'
 alias ..='cd ..'
 alias ...='cd ../../'
 alias l='ls'
 alias ll='ls -lah'
 alias h='history'
 
+# cd alias
+alias cdrs='cd /c/dev/root-site'
+alias cdcdn='cd /c/dev/cdn'
+alias cdpn='cd /c/dev/payworks-next/payworks-next'
+alias cdpn2='cd /c/dev/payworks-next-v2'
+alias cdpns='cd /c/dev/payworks-next'
+alias cdods='cd /c/dev/odsdatacompare'
+alias cdyeet='cd /c/dev/yearend-email-tool'
+
 # git
 source ~/git-completion.bash
 alias gits='git status'
 alias gitl='git log'
+alias gitsl='git shortlog'
 alias gitgl='git glog'
 alias gitla='git log --graph --oneline --all --decorate'
 alias gitd='git diff'
@@ -30,13 +30,13 @@ alias gitbr='git branch'
 alias gitbrm='git branch -m'
 alias gitst='git stash'
 alias gitstp='git stash pop'
-alias gitstl='git stash list'
+alias gitstl='git stash list --date=local'
 alias gitsts='git stash show'
 alias gitstd='git stash show -p' # diff
 alias gitr='git reset'
 alias gitch='git checkout'
 __git_complete gitch _git_checkout
-alias gitrb='git rebase -i'
+alias gitrb='git rebase -i --no-verify' # --no-verify: Git hook for time logging is awk when squashing commits.
 alias gitfrb='git fetch -p && git rebase -i'
 alias gitcl='git clone'
 alias gitcb='git checkout -b'
@@ -52,6 +52,7 @@ alias gitfpl='git fetch -p && git pull'
 alias gitrm='git rm'
 alias gitbl='git blame -w'
 alias gitbrdelrem='git push origin --delete'
+alias gitbrnotonorigin='git branch -r | awk "{print \$1}" | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk "{print \$1}"'
 
 function gitchpl()
 {
@@ -67,13 +68,18 @@ function gitfchpl()
     git fetch -p && git checkout "$@" && git pull;
 }
 
+function syncpb()
+{
+    cp /c/Users/jon.melven/Desktop/syncpb/* /c/dev/payworks-next-v2/src/MicroServices/SyncPB/Handler/InternalDependencies/;
+}
+
 # productivity
 alias todo='vim ~/Desktop/todo'
 alias todoc='cat ~/Desktop/todo'
 
-# mingw sucks
-#alias vim='/c/Program\ Files\ \(x86\)/Vim/vim81/vim.exe'
-
 # sometimes we need to use cmd.exe
 alias pullresx='start /msys.bat /c/dev/root-site/PullResx.bat'
 alias runbat='start /msys.bat'
+
+# setup sudo for git bash
+[ -f ~/bin/win-sudo/s/path.sh ] && source ~/bin/win-sudo/s/path.sh
