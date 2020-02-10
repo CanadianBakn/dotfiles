@@ -6,6 +6,7 @@ alias ...='cd ../../'
 alias l='ls'
 alias ll='ls -lah'
 alias h='history'
+alias open='start' # my brain can't remember the Windows equiv for "open"
 
 # cd alias
 alias cdrs='cd /c/dev/root-site'
